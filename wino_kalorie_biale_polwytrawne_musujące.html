@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wino gronowe</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 10px;
+        }
+        .spacer {
+            height: 20px;
+        }
+        .content {
+            display: flex;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+        .content img {
+            width: 40%;
+            max-width: 300px;
+            margin-right: 20px;
+        }
+        .content-text {
+            flex: 1;
+            font-size: 14px;
+            line-height: 1.4; /* Mniejsze odstępy między liniami */
+        }
+        .content-text h2 {
+            margin: 0;
+            font-size: 1.2em; /* Mniejszy nagłówek */
+            font-weight: bold;
+        }
+        .content-text p {
+            margin-top: 10px;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #28a745;
+            color: white;
+        }
+        .highlight {
+            background-color: #f4f4f4;
+        }
+        .ingredients {
+            background-color: #f4f4f4;
+            padding: 15px;
+            border: 1px solid #ddd;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 16px;
+        }
+        .ingredients strong {
+            color: black;
+        }
+        @media (max-width: 600px) {
+            .content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .content img {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>Wino gronowe białe półwytrwane musujące<br>
+    <strong>Producent:  Winnica Bruntelesa </strong></p>
+
+    <div class="spacer"></div>
+
+    <div class="content">
+        <img src="biale_polwytrawne.png" alt="Zdjęcie wina">
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Wartość odżywcza</th>
+                <th>w 100 ml</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Wartość energetyczna</td>
+                <td>320 kJ / 77 kcal</td>
+            </tr>
+            <tr class="highlight">
+                <td>Tłuszcz</td>
+                <td>0 g</td>
+            </tr>
+            <tr>
+                <td>&mdash; w tym kwasy tłuszczowe nasycone</td>
+                <td>0 g</td>
+            </tr>
+            <tr class="highlight">
+                <td>Węglowodany</td>
+                <td>1,9 g</td>
+            </tr>
+            <tr>
+                <td>&mdash; w tym cukry</td>
+                <td>1,2 g</td>
+            </tr>
+            <tr class="highlight">
+                <td>Białko</td>
+                <td>&lt;0,5 g</td>
+            </tr>
+            <tr>
+                <td>Sól</td>
+                <td>&lt;0,01 g</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="ingredients">
+        <h2>SKŁADNIKI</h2>
+        <p>Winogrona, rektyfikowany zagęszczony moszcz winogronowy,<br>
+        Konserwanty i przeciwutleniacze: <strong>pirosiarczyn potasu E224</strong></p>
+    </div>
+</body>
+</html>

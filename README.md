@@ -1,2 +1,1 @@
-# Winnica_Bruntelesa
-Wino Kalorie
+Strona zawiera zawartość kalorii w winie
